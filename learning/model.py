@@ -61,6 +61,9 @@ class CausalSelfAttention(nn.Module):
         # projection layer to combine the different vectors q, k, v
         self.proj = nn.Linear(config.n_embd, config.n_embd)
 
+        self.attn_dropout = nn.Dropout(config.dropout)  # dropout layers
+        self.resid_dropout = nn.Dropout(config.dropout)
+
     def forward(
         self, x: torch.Tensor
     ):  # input tensor in the shape (batch_size, sequence_length, n_embd), for example (2, 10, 256)
@@ -103,6 +106,7 @@ class CausalSelfAttention(nn.Module):
 
         # convert the attention scores into attention weights
         weights = F.softmax(scores, dim=-1)
+        weights = self.attn_dropout(weights)
 
         # combine the value vectors using the attention weights
         out = torch.matmul(weights, v)
@@ -114,6 +118,7 @@ class CausalSelfAttention(nn.Module):
 
         # projecting the ouput with the learned projection layer (explanation above in the initialization)
         out = self.proj(out)
+        out = self.resid_dropout(out)
 
         return out
 
@@ -127,9 +132,10 @@ class FeedForward(nn.Module):
         self.config = config
 
         self.ff = nn.Sequential(
-            nn.Linear(config.n_embd, config.n_embd * 4),  # example: 256 -> 1024
+            nn.Linear(config.n_embd, config.n_embd * 4),
             nn.ReLU(),
-            nn.Linear(config.n_embd * 4, config.n_embd),  # example: 1024 -> 256
+            nn.Linear(config.n_embd * 4, config.n_embd),
+            nn.Dropout(config.dropout),
         )
 
     def forward(self, x: torch.Tensor):
@@ -178,16 +184,69 @@ class GPT(nn.Module):
             num_embeddings=config.block_size, embedding_dim=config.n_embd
         )
 
+        self.blocks = nn.ModuleList(
+            [TransformerBlock(config) for _ in range(config.n_layers)]
+        )  # transformer blocks :) stored in a list basically
+
+        self.ln_f = nn.LayerNorm(config.n_embd)  # final layer norm
+        self.lm_head = nn.Linear(
+            config.n_embd, config.vocab_size
+        )  # language model head
+
+    def forward(self, idx: torch.Tensor):
+        # get the sequence length
+        sequence_length = idx.shape[1]
+
+        if (
+            sequence_length > self.config.block_size
+        ):  # sequence and block size don't match
+            raise ValueError(
+                f"Sequence length ({sequence_length}) exceeds "
+                f"block size ({self.config.block_size})"
+            )
+
+        # create position indices
+        positions = torch.arange(sequence_length, device=idx.device)
+
+        # calculate embeddings
+        token_emb = self.token_embedding(idx)
+        pos_emb = self.positional_embedding(positions)
+
+        # combine token and positional embeddings
+        x = token_emb + pos_emb
+
+        for block in self.blocks:  # iterate through the transformer blocks
+            x = block(x)
+
+        x = self.ln_f(x)  # final layer norm
+        x = self.lm_head(x)  # language model head
+
+        return x
+
 
 """
 Debug :))
 """
 
 config = GPTConfig(vocab_size=100)
-block = TransformerBlock(config)
+model = GPT(config)
 
-x = torch.randn(2, 10, config.n_embd)
-out = block(x)
+idx = torch.randint(0, config.vocab_size, (2, 10))
+logits = model(idx)
 
-print("Input shape:", x.shape)
-print("Output shape:", out.shape)
+print(logits.shape)
+
+
+model.train()
+
+logits_1 = model(idx)
+logits_2 = model(idx)
+
+print("Training mode:", not torch.equal(logits_1, logits_2))
+
+model.eval()
+
+logits_3 = model(idx)
+logits_4 = model(idx)
+
+print("Evaluation mode:", torch.equal(logits_3, logits_4))
