@@ -38,7 +38,7 @@ class GPTDataset(Dataset):
         return x, y
 
 
-def main():
+def prepare_data():  # pretty much the only important part - main is used only for debug
     # load tokenizer
     tokenizer = BPETokenizer.load(tokenizer_file)
 
@@ -54,6 +54,13 @@ def main():
     # create dataset
     dataset = GPTDataset(data, block_size)
 
+    return tokenizer, dataset
+
+
+def main():
+    # prepare data
+    tokenizer, dataset = prepare_data()
+
     # create dataloader
     dataloader = DataLoader(
         dataset,
@@ -64,7 +71,6 @@ def main():
 
     # debug
     print("Vocabulary size:", tokenizer.get_vocab_size())
-    print("Number of tokens:", len(token_ids))
     print("Dataset size:", len(dataset))
 
     x, y = dataset[0]
@@ -84,6 +90,10 @@ def main():
     print("\nBatch:")
     print("Input shape:", x.shape)
     print("Target shape:", y.shape)
+
+
+if __name__ == "__main__":
+    main()
 
 
 if __name__ == "__main__":
