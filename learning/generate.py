@@ -37,6 +37,9 @@ model.load_state_dict(checkpoint["model_state_dict"])  # load the parameters
 # swith to eval mode
 model.eval()
 
+# get the end of text token id
+end_of_text_id = tokenizer.tokenizer.token_to_id("<|endoftext|>")
+
 
 def generate_text(prompt: str, max_new_tokens: int = 100) -> str:
     input_ids = tokenizer.encode(prompt)
@@ -72,9 +75,8 @@ def generate_text(prompt: str, max_new_tokens: int = 100) -> str:
             # sample next token
             next_token = torch.multinomial(probabilities, num_samples=1)
 
-            if (
-                tokenizer.decode(next_token[0].tolist()) == "<|endoftext|>"
-            ):  # break after the end of text token
+            # stop after the end of text token
+            if next_token.item() == end_of_text_id:
                 break
 
             # append token
@@ -87,7 +89,7 @@ def generate_text(prompt: str, max_new_tokens: int = 100) -> str:
 def main():
     while True:
         prompt = input("Enter a prompt: ")
-        generated_text = generate_text(prompt)
+        generated_text = generate_text(prompt, max_new_tokens)
 
         print("\nGenerated text:\n")
         print(generated_text)
