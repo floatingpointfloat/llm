@@ -9,10 +9,5 @@ data/training_text.txt
 learning/data/training_text.txt
 learning/data/qa_training.txt
 
-# model checkpoints
-*.pt
-*.pth
-*.safetensors
-
 # logs
 *.log

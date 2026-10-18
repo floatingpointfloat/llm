@@ -8,12 +8,12 @@ dataset = load_dataset(
     streaming=True,
 )
 
-output_file = Path("data") / "training_text.txt"
+output_file = Path("data") / "training_text_wiki.txt"
 output_file.parent.mkdir(parents=True, exist_ok=True)
 
 with output_file.open("w", encoding="utf-8") as file:
     for i, article in enumerate(dataset):
-        if i >= 100_000:
+        if i >= 1_000:
             break
 
         file.write(article["text"])
