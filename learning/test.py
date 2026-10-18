@@ -10,7 +10,7 @@ from model import GPT, GPTConfig
 from tokenizer import BPETokenizer
 
 # settings
-max_new_tokens = 1000
+max_new_tokens = 50
 temperature = 0.8
 
 # paths
