@@ -153,5 +153,4 @@ for epoch in range(start_epoch, start_epoch + epochs):
 
     print("Checkpoint saved:", checkpoint_file)
 
-
 print("Training finished!")

@@ -89,6 +89,7 @@ def generate_text(prompt: str, max_new_tokens: int = 100) -> str:
 def main():
     while True:
         prompt = input("Enter a prompt: ")
+        prompt = f"User: {prompt}\nAssistant: "
         generated_text = generate_text(prompt, max_new_tokens)
 
         print("\nGenerated text:\n")

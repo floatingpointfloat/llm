@@ -6,7 +6,7 @@ Assistant: A strawberry is an aggregate accessory fruit.
 User: What is method overriding in inheritance?
 Assistant: It's when a child class redefines a method from its parent.
 python
-class Shape:
+class Shape:-
     def area(self):
         print('Calculating area')
 
