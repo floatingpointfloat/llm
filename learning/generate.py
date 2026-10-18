@@ -10,7 +10,7 @@ from pathlib import Path
 import torch
 
 # settings for the generation
-max_new_tokens = 1000
+max_new_tokens = 2000
 temperature = 0.8
 
 # select device
