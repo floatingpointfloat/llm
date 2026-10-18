@@ -10,7 +10,7 @@ from pathlib import Path
 import torch
 
 # settings for the generation
-max_new_tokens = 50
+max_new_tokens = 1000
 temperature = 0.8
 
 # select device
@@ -71,6 +71,11 @@ def generate_text(prompt: str, max_new_tokens: int = 100) -> str:
 
             # sample next token
             next_token = torch.multinomial(probabilities, num_samples=1)
+
+            if (
+                tokenizer.decode(next_token[0].tolist()) == "<|endoftext|>"
+            ):  # break after the end of text token
+                break
 
             # append token
             idx = torch.cat((idx, next_token), dim=1)
