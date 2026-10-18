@@ -6,7 +6,7 @@ from pathlib import Path
 from tokenizer import BPETokenizer
 
 # path to the training corpus
-training_file = Path("data\english_tokenizer_training_corpus.txt")
+training_file = Path("data\physics_training_corpus.txt")
 
 # initialize the tokenizer
 tokenizer = BPETokenizer(vocab_size=8000)

@@ -1,0 +1,189 @@
+DEUTSCHER MÄRCHENKORPUS FÜR EIN LERNPROJEKT
+
+Diese Datei enthält acht eigens verfasste Märchen mit klassischen Motiven, magischen Gegenständen, sprechenden Tieren, Aufgaben, Konflikten und einem versöhnlichen Ende. Die Geschichten sind als Ausgangspunkt für Experimente mit einem kleinen Sprachmodell gedacht.
+
+DAS MÄDCHEN UND DIE STERNE IM BRUNNEN
+
+Es war einmal ein Dorf zwischen dunklen Tannenwäldern und einem silbernen Fluss. Dort lebte Lina mit ihrem Großvater in einem kleinen Häuschen. Jeden Abend erzählte er ihr Geschichten von sprechenden Tieren, verzauberten Schlössern und Sternen, die vom Himmel fallen konnten.
+
+Eines Herbstabends bemerkte Lina, dass der alte Dorfbrunnen glitzerte, obwohl keine Sterne am Himmel standen. Tief unten funkelten kleine Lichter, und eine Stimme flüsterte: „Drei Sterne sind aus dem Himmel gefallen. Solange sie fehlen, werden die Menschen vergessen, wie man einander hilft.“
+
+Lina ließ einen Korb hinab und zog einen winzigen Stern herauf. Am nächsten Morgen brachte sie ihn zur Bäckerin, die seit Tagen kein Brot mehr backen konnte. Als die Bäckerin das Licht sah, erinnerte sie sich an einen Mehlsack im trockenen Keller. Sie buk Brot für das ganze Dorf. Da stieg ein goldener Funke aus dem Stern und flog zum Himmel.
+
+Den zweiten Stern fand Lina in einem Waldteich. Ein Fuchs mit silbernen Pfoten bewachte ihn. Er verlangte kein Gold, sondern bat Lina, ihm zuzuhören. Er erzählte von Bäumen, die gefällt worden waren, und Vögeln, die keine Nester mehr fanden. Lina überzeugte die Dorfbewohner, neue Bäume zu pflanzen. Daraufhin schenkte der Fuchs ihr den Stern.
+
+Der dritte Stern lag in einer Höhle hinter einem Wasserfall. Ein kleiner Drache hielt ihn unter seinen Flügeln. Er hatte ihn gestohlen, weil er Angst vor der Dunkelheit hatte. Lina setzte sich neben ihn und erzählte, dass auch ihr Großvater manchmal Angst hatte. „Mut bedeutet nicht, dass man niemals Angst hat“, sagte sie. „Mut bedeutet, trotz der Angst etwas Gutes zu versuchen.“ Der Drache gab den Stern frei und bat Lina, ihn wieder zu besuchen.
+
+Als Lina alle drei Sterne auf den Dorfplatz brachte, begannen die Menschen, einander zuzuhören. Der Müller reparierte das Dach der Bäckerin, die Bäckerin teilte ihr Brot, und die Kinder bauten gemeinsam eine Brücke. Die Sterne stiegen an den Himmel, heller als zuvor.
+
+Ihr Großvater nahm Lina in den Arm. „Du hast drei Sterne gerettet“, sagte er. Lina blickte hinauf. „Ich habe nur daran erinnert, dass Licht größer wird, wenn man es teilt.“
+
+Seit jener Nacht leuchten über dem Dorf drei besonders helle Sterne. Wer sie sieht, erinnert sich daran, dass eine kleine gute Tat oft eine größere nach sich zieht.
+
+========================================================================
+
+DER PRINZ, DER NICHT LÜGEN KONNTE
+
+In einem Königreich hinter sieben Hügeln lebte Prinz Emil. Er war freundlich und konnte wunderbar Flöte spielen, doch er konnte nicht lügen. Wenn eine Suppe verbrannt schmeckte, sagte er es. Wenn die Krone seines Vaters wie ein Kochtopf aussah, sagte er auch das. Der König fand diese Ehrlichkeit peinlich und meinte, ein Herrscher müsse wissen, wann er schweigen sollte.
+
+Eines Tages kam eine Zauberin an den Hof. Sie versprach ewigen Reichtum, wenn der König ihr den Schlüssel zur Schatzkammer gäbe. Alle Minister lobten sie aus Angst, nur Emil widersprach. „In ihrer Tasche klirrt Gold. Ich glaube, sie hat uns bereits bestohlen.“ Die Zauberin lächelte kalt und stellte ihm eine Aufgabe. Er sollte Wasser finden, das sich an nichts erinnerte, eine Feder, schwerer als ein Berg, und ein Lied, das noch niemand gehört hatte.
+
+Emil machte sich mit seinem alten Pferd auf den Weg. Am See fand er eine Frau, die die Stimme ihres fortgezogenen Bruders vergessen hatte. Emil schöpfte Wasser in eine Flasche und gab ihr einen Schluck. Da erinnerte sie sich an ein Lied aus ihrer Kindheit. Ein Tropfen blieb in der Flasche zurück: Wasser, das Erinnerungen nicht festhielt, aber helfen konnte, sie wiederzufinden.
+
+Auf einem hohen Berg entdeckte Emil einen Adler, dessen Feder verloren gegangen war. Ohne sie konnte er seine Jungen nicht wärmen. Emil kletterte hinauf und brachte die Feder zurück. Der Adler schenkte ihm eine andere Feder. „Sie ist schwer, weil sie Verantwortung trägt“, sagte er. „Wer sie besitzt, muss ein Versprechen halten.“
+
+Schließlich kam Emil in ein Dorf, in dem niemand mehr sang. Ein Zauber hatte alle Lieder aus den Köpfen der Menschen gelöscht. Emil setzte sich auf einen Brunnenrand und spielte Flöte. Er dachte an Regen, Kinderlachen und Wind in den Bäumen. Aus diesen Geräuschen entstand eine neue Melodie. Die Dorfbewohner sangen mit, obwohl sie das Lied nie zuvor gehört hatten.
+
+Als Emil zum Schloss zurückkehrte, legte er die drei Dinge vor die Zauberin. Das Wasser leuchtete, die Feder schwebte, und das Lied erfüllte den Saal. Die Zauberin verwandelte sich in eine Krähe und flog davon. Ihre Tasche fiel zu Boden und war voller gestohlener Münzen.
+
+Der König entschuldigte sich bei seinem Sohn. „Wahrheit ist nicht immer bequem“, sagte er. „Aber ohne sie wissen wir nicht, wem wir vertrauen können.“ Emil wurde später ein gerechter König. Er lernte, freundlich zu sprechen, ohne die Wahrheit zu verstecken. Und wenn ihm jemand eine verbrannte Suppe vorsetzte, bat er höflich um etwas Brot dazu.
+
+========================================================================
+
+DIE SCHNEIDERIN UND DAS KLEID AUS MONDLICHT
+
+In einer kleinen Stadt lebte Mara, eine Schneiderin, die aus einem Stück Stoff ein Kleid nähen konnte, das aussah wie Morgennebel. Sie nähte Mäntel für Arme, Festgewänder für Reiche und Decken für frierende Kinder. Sie verlangte nie mehr, als die Menschen bezahlen konnten.
+
+Eines Nachts klopfte eine Botin an ihre Tür. „Die Königin ist traurig, obwohl sie alles besitzt“, sagte sie. „Sie wünscht sich ein Kleid aus Mondlicht. Wenn du es nicht bis zum nächsten Vollmond nähst, musst du die Stadt verlassen.“
+
+Mara versuchte, silberne Seide zu weben, doch sie glänzte nur wie Metall. Sie sammelte Tautropfen und mischte sie mit Perlenstaub, aber das Ergebnis war schwer und kalt. Schließlich setzte sie sich auf eine Wiese. Dort begegnete sie einem alten Schäfer. „Der Mond gibt sein Licht jedem“, sagte er. „Vielleicht suchst du an der falschen Stelle.“
+
+Am nächsten Tag besuchte Mara die Menschen, denen sie geholfen hatte. Eine Bäckerin gab ihr feines Leinen, ein Fischer brachte silberne Fäden, ein Kind schenkte ihr einen Knopf aus blauem Glas, und ein alter Mann überließ ihr eine Spitze, die seine Mutter gehäkelt hatte. Jeder gab etwas Kleines, das ihm wichtig war.
+
+Mara nähte die Gaben zusammen. Sie dachte an geteiltes Brot, ein sicheres Heim nach einem Sturm, das Lachen eines Kindes und die Hand eines Freundes, der blieb, als andere fortgingen. Das Kleid leuchtete nicht wirklich, aber wer es ansah, fühlte sich weniger allein.
+
+Am Vollmondabend brachte Mara das Kleid in den Palast. Die Königin betrachtete es lange. „Es leuchtet nicht wie der Mond“, sagte sie. „Nein“, antwortete Mara. „Es leuchtet wie die Menschen, die an dich denken, wenn du Hilfe brauchst.“
+
+Die Königin gestand, dass sie seit Jahren kaum mit jemandem gesprochen hatte. Alle lobten sie, doch niemand sagte ihr, wenn sie einen Fehler machte. Sie setzte sich neben Mara und fragte, wie es den Menschen in der Stadt ging. Zum ersten Mal hörte sie zu, ohne bereits eine Antwort vorzubereiten.
+
+Am Morgen öffnete die Königin die Palastküchen für Bedürftige, ließ eine gefährliche Brücke reparieren und besuchte die Werkstätten. Das Kleid hing sie nicht in eine Truhe. Sie trug es an jedem Vollmondabend, um sich daran zu erinnern, dass ein Königreich nicht aus Gold allein besteht.
+
+Mara durfte junge Schneiderinnen ausbilden, blieb aber in ihrem kleinen Haus wohnen. Wenn der Mond über der Stadt stand, schimmerte manchmal ein Fenster silbern. Dann sagten die Leute, irgendwo werde ein Kleid getragen, das aus Freundlichkeit genäht worden war.
+
+========================================================================
+
+DER FUCHS MIT DEM GLÄSERNEN SCHLÜSSEL
+
+Tief im Tannenwald stand ein Schloss, das niemand betreten durfte. Die Leute erzählten, darin liege ein Schatz, der einen Menschen für immer reich machen könne. Jakob, ein Junge, der lieber Tierspuren las als Gold suchte, glaubte den Geschichten nicht recht.
+
+Eines Morgens fand er einen Fuchs, dessen Pfote in einer Wurzel feststeckte. Jakob befreite ihn vorsichtig. Der Fuchs schüttelte sich und sprach: „Du hast mir geholfen, ohne nach einer Belohnung zu fragen. Deshalb zeige ich dir etwas.“ Er führte Jakob zu einer Lichtung, auf der ein gläserner Schlüssel lag. In seinem Inneren wirbelten goldene Funken. „Jede Tür öffnet sich zu etwas anderem, je nachdem, was du suchst.“
+
+Jakob öffnete die erste Tür des Schlosses und fand eine Halle voller Gold und Edelsteine. Er hob eine Münze auf. Sie war kalt und schwer. Als er sie zurücklegte, verschwand die Halle. Hinter der zweiten Tür lag ein Garten mit einem Tisch voller Speisen und Gestalten aus seiner Kindheit. Doch als er sich setzte, wurden ihre Gesichter still. Es waren nur Erinnerungen, die der Garten nachahmte.
+
+Hinter der dritten Tür hörte Jakob ein Wimmern. Eine alte Frau saß in einer Kammer und wusste ihren eigenen Namen nicht mehr. Sie war einst die Hüterin des Schlosses gewesen. Vor hundert Jahren hatte sie den Schlüssel verloren und sich so sehr geschämt, dass sie niemandem davon erzählte. Mit jedem Jahr war das Schloss dunkler geworden.
+
+Jakob setzte sich zu ihr. Er fragte nicht nach Gold und verlangte keine Belohnung. Gemeinsam öffneten sie die Fenster und ließen Licht in die staubigen Räume. Die Frau erinnerte sich schließlich an ihren Namen: Alwine. Als sie ihn aussprach, begann der Schlüssel warm zu leuchten.
+
+Der Fuchs erschien auf der Treppe. „Du hast den Schatz gefunden“, sagte er. Jakob sah sich um. „Hier ist kein Schatz.“ Alwine lächelte. „Ein Geheimnis, das man aus Angst bewahrt, wird schwer. Wenn man es teilt, kann es wieder leicht werden.“
+
+Am nächsten Tag kehrte Alwine ins Dorf zurück und erzählte die Wahrheit. Die Menschen halfen ihr, das Schloss zu reinigen. Sie machten daraus eine Schule, eine Bibliothek und eine Herberge für Reisende. Jakob durfte den ersten Baum im Garten pflanzen.
+
+Der Fuchs kam oft vorbei und beobachtete die Kinder beim Lesen. Niemand wusste, ob er ein verzauberter Prinz oder einfach ein kluger Fuchs war. Jakob fragte ihn nie. Es genügte ihm, dass er einen Freund im Wald hatte.
+
+========================================================================
+
+DIE KLEINE HEXE UND DER REGENBOGENBRUNNEN
+
+Am Rand eines Moores lebte eine junge Hexe namens Nela. Sie konnte Nebel rufen, Kräuter erkennen und Kerzen anzünden, ohne sie zu berühren. Nur Farben konnte sie nicht zaubern. Ihre Tränke waren grau, ihre Lichter weiß und ihre Zauberkreise schwarz. Die anderen Hexen lachten darüber und behaupteten, ohne Farben könne sie niemals eine große Zauberin werden.
+
+Eines Tages verschwand der Regenbogen über dem Moor. Die Blumen wurden blass, die Beeren schmeckten nach nichts, und die Menschen vergaßen die Namen mancher Farben. Nela beschloss, den Regenbogen zu suchen.
+
+Auf ihrem Weg befreite sie eine Krähe, deren Flügel in Dornen hing. Die Krähe schenkte ihr eine schwarze Feder. Später half Nela einem Riesen, über einen Bach zu gelangen, ohne die Frösche zu zertreten. Er gab ihr einen glatten Kiesel. Schließlich führte sie ein verlorenes Kind nach Hause. Das Kind schenkte ihr ein rotes Band.
+
+Nach drei Tagen erreichte Nela einen Brunnen auf einer Hügelkuppe. Das Wasser darin war farblos. Eine Stimme fragte: „Welche Farbe suchst du?“
+„Alle“, antwortete Nela.
+„Dann sage mir, welche Farbe du selbst besitzt.“
+
+Nela betrachtete die Feder, den Kiesel und das Band. „Ich bin nicht besonders bunt“, sagte sie. „Aber ich helfe, auch wenn ich nicht weiß, ob ich gut genug bin.“
+
+Da stieg Wasser aus dem Brunnen, und in jedem Tropfen schimmerte eine andere Farbe. Nela verstand: Die Farben waren nicht verschwunden. Die Menschen hatten vergessen, was sie bedeuteten. Rot erinnerte an Mut, Blau an Ruhe, Grün an Wachstum, Gelb an Freude und Violett an Geheimnisse.
+
+Nela schöpfte einen Becher Wasser und trug ihn ins Dorf. Sie bat die Menschen, einander von einem Moment zu erzählen, in dem jemand ihnen geholfen hatte. Mit jeder Geschichte kehrte eine Farbe zurück. Als der letzte Dorfbewohner von seiner Schwester erzählte, die ihm einst das Lesen beigebracht hatte, spannte sich ein Regenbogen über das Moor.
+
+Die ältesten Hexen baten Nela um Verzeihung. Sie hatten geglaubt, Magie müsse immer beeindruckend aussehen. Nela zeigte ihnen, dass selbst eine kleine Tat die Welt verändern konnte. Von da an wurde sie eine angesehene Hexe. Ihre Zauber waren selten laut und niemals prunkvoll. Wenn jemand traurig war, fand sie meist das Richtige: eine Tasse warmen Tee, ein Licht im Fenster oder eine Geschichte, die wieder Farbe in den Tag brachte.
+
+========================================================================
+
+DIE SIEBEN TÜREN DES WINTERKÖNIGS
+
+Als der Winter einmal nicht enden wollte, froren die Flüsse bis auf den Grund zu. Im Dorf am Fuß des Nordberges lebte Frieda. Sie machte sich Sorgen um die Tiere, die kaum noch Futter fanden. Die Leute sagten, der Winterkönig habe den Frühling in seinem Palast eingeschlossen. Niemand wagte, ihn aufzusuchen, denn sein Schloss hatte sieben Türen.
+
+Frieda packte Brot, eine Wolldecke und eine Laterne ein. Hinter der ersten Tür fand sie einen frierenden Wolf und gab ihm ihre Decke. Hinter der zweiten lag ein Raum voller Uhren, die rückwärts liefen. Frieda musste geduldig warten, bis sich die Tür öffnete. Hinter der dritten saß ein Riese, der ein Rätsel hören wollte. „Was wird größer, wenn man es teilt?“, fragte Frieda. „Freude“, antwortete er schließlich.
+
+Hinter der vierten Tür standen Spiegel, die viele Wege zeigten. Frieda schloss die Augen und erinnerte sich an die Richtung des Windes. Hinter der fünften Tür lag ein Garten ohne Pflanzen. Sie legte Brotkrumen in die Erde und erzählte von den Blumen des Sommers. Kleine grüne Spitzen erschienen im Schnee.
+
+Die sechste Tür bewachte ein Drache, der seit Jahren niemanden zum Reden gehabt hatte. Frieda setzte sich zu ihm und hörte zu. Als er fertig war, öffnete er die Tür selbst.
+
+Hinter der siebten Tür saß der Winterkönig. Neben ihm stand eine gläserne Truhe, in der ein winziger grüner Trieb lag. „Der Frühling gehört mir“, sagte der König. „Wenn er kommt, vergessen die Menschen den Winter und seine Schönheit.“
+
+Frieda setzte sich ihm gegenüber. „Vielleicht vergessen sie manchmal den Schnee“, sagte sie. „Aber sie vergessen nicht, wer ihnen in der Kälte geholfen hat. Der Frühling nimmt dem Winter seine Schönheit nicht. Er zeigt nur, dass nach der Ruhe wieder etwas wachsen kann.“
+
+Der König betrachtete den Trieb. Er erinnerte sich an die erste Schneeflocke, die einst auf seiner Hand geschmolzen war, und daran, wie er sich über das Frühlingslicht gefreut hatte, bevor er begann, es zu fürchten. Langsam öffnete er die Truhe. Der Trieb wuchs, entfaltete zwei Blätter und brachte einen warmen Duft in den Saal. Eis tropfte von den Fenstern.
+
+Als Frieda ins Dorf zurückkehrte, fiel am Abend der letzte Schnee. Am Morgen sangen die Vögel, und die ersten Blumen reckten sich aus der Erde. Die Menschen feierten ein Fest und stellten einen Platz für den Winterkönig frei. Er kam ohne Krone und ohne kalten Mantel. Niemand verlangte von ihm, den Winter zu vergessen. Sie baten ihn nur, jedes Jahr zur rechten Zeit Platz für den Frühling zu machen.
+
+Seitdem wechseln die Jahreszeiten friedlich. Auf dem Nordberg blüht jedes Frühjahr eine einzelne Blume, selbst wenn ringsum noch Schnee liegt.
+
+========================================================================
+
+DAS SCHIFF AUS BIRKENRINDE
+
+Am Ufer eines stillen Sees lebte Tom, der davon träumte, die Welt zu sehen. Sein Dorf war klein, die Wege waren bekannt, und jeder Tag schien dem vorherigen zu gleichen. Eines Morgens fand er am Strand ein winziges Schiff aus Birkenrinde. Als er es ins Wasser setzte, wuchs es zu einem richtigen Boot heran. Eine Stimme aus dem Mast flüsterte: „Ich fahre nur dorthin, wo eine Frage auf eine Antwort wartet.“
+
+Tom stieg ein. Das Schiff glitt zu einer Insel, auf der alle Menschen ihre Schatten verloren hatten. Ohne Schatten merkten sie nicht, wann sie müde waren, und arbeiteten Tag und Nacht. Tom suchte mit ihnen den Strand ab, bis er ihre Schatten unter einer großen Muschel fand. Die Muschel hatte sie gesammelt, weil sie gern im Dunkeln leuchtete. Tom erklärte, dass die Menschen ihre Schatten brauchten, um sich auszuruhen. Die Muschel gab sie zurück und behielt nur einen kleinen Schatten für ihre Höhle.
+
+Dann fuhr Tom zu einer Stadt, in der alle Türen offen standen, aber niemand sein Haus verließ. Die Menschen hatten Angst vor Fehlern und warteten darauf, dass jemand versprach, alles werde gelingen. Tom ging hinaus und ließ einen Papierdrachen steigen. Er fiel dreimal zu Boden. Beim vierten Versuch flog er über die Dächer. Da trauten sich auch die anderen Menschen hinaus.
+
+Auf der dritten Insel lebte ein Kartograf, der jede Straße der Welt gezeichnet hatte, aber nie selbst gereist war. Er fürchtete, eine seiner Karten könnte falsch sein. Tom lud ihn ein, mitzukommen. Der Kartograf zögerte lange, dann nahm er seinen Mantel. Gemeinsam entdeckten sie einen Wald, der auf keiner Karte stand, und einen Fluss, der nur bei Nacht floss.
+
+Als Tom nach Hause zurückkehrte, fragte seine Mutter, ob er nun genug von der Welt gesehen habe. „Nein“, sagte Tom. „Aber ich weiß jetzt, dass die Welt nicht nur hinter den Bergen liegt. Sie beginnt dort, wo man sich traut, eine Frage zu stellen.“
+
+Er stellte das Schiff aus Birkenrinde auf sein Fensterbrett. Wenn jemand im Dorf eine schwierige Frage hatte, nahm Tom das Schiff mit zum See. Manchmal fuhr es los, manchmal blieb es still. Doch selbst wenn es nicht wuchs, hatte Tom gelernt, dass man eine Antwort oft erst findet, wenn man den Mut hat, den ersten Schritt zu tun.
+
+========================================================================
+
+DIE KÖNIGIN DER VERGESSENEN NAMEN
+
+Hinter einem Gebirge lag ein Königreich, in dem jedes Kind einen Namen erhielt, der zu seinem Wesen passen sollte. Eines Jahres kam ein grauer Nebel aus dem Tal. Wer ihn einatmete, vergaß nach und nach die Namen der Menschen, die er liebte. Bald vergaßen die Leute ihre Nachbarn und schließlich sogar ihre eigenen Namen.
+
+Ein Mädchen namens Anni blieb verschont, weil sie in der alten Bibliothek gewesen war. Die blinde Hüterin bewahrte dort die Namen aller Menschen in einem Buch. Sie erklärte Anni, dass eine Königin der Vergessenheit die Namen gestohlen hatte, weil niemand mehr nach ihr fragte.
+
+Anni nahm das Buch mit und wanderte ins Tal. Unterwegs traf sie einen Holzfäller, der den Namen seines Sohnes vergessen hatte. Anni las ihm den Eintrag vor. Der Mann erinnerte sich an die Stimme seines Kindes und schenkte ihr eine kleine Flöte. Später half sie einer Händlerin, den Namen ihrer verstorbenen Schwester wiederzufinden. Erst als sie sich an den roten Schal erinnerte, den die Schwester immer getragen hatte, kehrte ihr Name zurück.
+
+Im Nebeltal stand ein Palast aus grauem Stein. Die Königin saß in einem fensterlosen Saal. „Alle haben mich vergessen“, sagte sie. „Also nahm ich ihnen, was sie liebten.“ Anni wollte wütend werden, doch sie sah, wie allein die Königin war.
+
+„Wie heißt du?“, fragte Anni.
+
+Die Königin wusste es selbst nicht mehr. Anni schlug das Buch auf. Auf der letzten Seite stand ein fast verblasster Eintrag: „Elara, ein Mädchen, das Geschichten sammelte und sich wünschte, niemand müsse je allein sein.“ Anni las die Worte laut vor. Die Königin erinnerte sich an ein kleines Haus, an eine Mutter, die ihr Lieder vorsang, und an Freunde, die eines Tages fortgezogen waren.
+
+„Ich wollte nicht vergessen werden“, flüsterte Elara. „Ich wollte nur, dass jemand mich sucht.“
+
+„Dann komm zurück“, sagte Anni. „Die Menschen werden vielleicht nicht sofort verzeihen, aber du kannst wieder anfangen, Gutes zu tun.“
+
+Elara öffnete die Fenster des Palastes. Der Nebel stieg auf und wurde zu weißen Wolken. In der Hauptstadt fanden die Menschen ihre Namen wieder. Sie erzählten einander Geschichten, um sich aneinander zu erinnern. Elara kehrte mit Anni zurück und arbeitete lange daran, das Vertrauen des Königreichs neu zu gewinnen.
+
+Von da an gab es jedes Jahr ein Fest der Namen. Die Menschen erzählten, woher ihre Namen kamen und welche Geschichten sie bewahren wollten. Und Elara hörte zu, denn sie hatte gelernt, dass Erinnerung nicht durch Angst wächst, sondern dadurch, dass man einander Aufmerksamkeit schenkt.
+
+========================================================================
+
+DER GÄRTNER UND DIE UNSICHTBARE STADT
+
+Es war einmal ein Gärtner namens Benno, der neben einem verwilderten Schlossgarten lebte. Niemand besuchte den Garten, doch Benno kümmerte sich um die Pflanzen. Er glaubte, dass selbst ein Ort, den niemand ansah, Pflege verdiente.
+
+Eines Abends entdeckte er hinter einer Brombeerhecke ein schmales Tor. Dahinter lag eine Stadt aus hellem Stein. Ihre Straßen glänzten wie frisch gefallener Regen, und über den Dächern schwebten winzige Lichter. Doch kein Mensch war zu sehen.
+
+Am Brunnen saß ein Mädchen aus Glas. „Die Stadt wird unsichtbar“, erklärte es. „Ihre Bewohner haben aufgehört, einander wahrzunehmen. Bald verschwinden auch die Häuser.“
+
+Benno fragte, wie er helfen könne. Das Mädchen zeigte auf drei leere Beete. Im ersten sollte etwas wachsen, das Geduld brauchte. Im zweiten etwas, das geteilt werden konnte. Im dritten etwas, das niemand allein behalten konnte.
+
+Benno pflanzte im ersten Beet eine Eichel und goss sie jeden Tag, obwohl lange nichts geschah. Im zweiten pflanzte er Erdbeeren und stellte die reifen Früchte auf den Platz, damit alle davon essen konnten. Im dritten säte er Blumen, deren Samen der Wind davontragen konnte. Bald wuchsen sie in den Straßenritzen und auf den Dächern.
+
+Mit jedem neuen Blatt erschien ein Bewohner. Ein Bäcker erinnerte sich, dass er früher Brot für seine Nachbarn gebacken hatte. Eine Lehrerin wollte wieder Geschichten erzählen. Schließlich öffneten sich die Fenster, und die Menschen begannen, einander zu grüßen.
+
+Das gläserne Mädchen wurde sichtbar wie ein gewöhnliches Kind. „Du hast die Stadt gerettet“, sagte es. Benno schüttelte den Kopf. „Ich habe nur einen Garten angelegt.“
+
+„Ein Garten ist ein Versprechen“, sagte das Mädchen. „Man glaubt daran, dass etwas wachsen kann, auch wenn man es noch nicht sieht.“
+
+Als Benno zurückkehrte, war auch der Schlossgarten nicht länger verwildert. Zwischen den Hecken öffneten sich Wege, und der Brunnen sprudelte wieder. Die Menschen aus der unsichtbaren Stadt besuchten ihn oft und brachten Samen, Werkzeuge und Geschichten mit.
+
+Benno blieb Gärtner bis ans Ende seines Lebens. Er wurde nie König und fand keinen Schatz aus Gold. Aber jedes Frühjahr blühte der Garten üppiger. Wer durch das Tor ging, konnte erkennen, dass eine Stadt manchmal nicht aus Mauern besteht, sondern aus Menschen, die sich umeinander kümmern.

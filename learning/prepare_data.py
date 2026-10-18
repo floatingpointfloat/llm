@@ -10,7 +10,7 @@ from torch.utils.data import DataLoader, Dataset
 from tokenizer import BPETokenizer
 
 # paths
-training_file = Path("data/english_tokenizer_training_corpus.txt")
+training_file = Path("data\physics_training_corpus.txt")
 tokenizer_file = Path("tokenizer.json")
 
 
