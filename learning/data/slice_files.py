@@ -1,6 +1,6 @@
 # Create a tiny custom dataset of your preferred size
-input_file = "training_text.txt"
-output_file = "training_text_new.txt"
+input_file = "training_text_base.txt"
+output_file = "training_text.txt"
 
 # Change this number to however many lines you want to test with
 max_lines = 7000
