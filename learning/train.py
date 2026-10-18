@@ -18,10 +18,10 @@ epochs = 10
 learning_rate = 3e-4
 
 # set to True to continue training from the latest checkpoint
-resume_training = True
+resume_training = False
 
 # master switch
-ALLOW_TRAINING = False
+ALLOW_TRAINING = True
 
 if not ALLOW_TRAINING:
     raise RuntimeError("Training isn't allowed currently!")

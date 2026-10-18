@@ -13,7 +13,7 @@ print("File exists:", Path(training_file).exists())
 print("Absolute path:", Path(training_file).resolve())
 
 # initialize the tokenizer
-tokenizer = BPETokenizer(vocab_size=8000)
+tokenizer = BPETokenizer(vocab_size=50000)
 
 # train the tokenizer
 tokenizer.train([str(training_file)])
