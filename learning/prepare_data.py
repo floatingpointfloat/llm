@@ -8,11 +8,7 @@ import torch
 from torch.utils.data import DataLoader, Dataset
 
 from tokenizer import BPETokenizer
-
-# paths
-training_file = Path("data\physics_training_corpus.txt")
-tokenizer_file = Path("tokenizer.json")
-
+from config import training_file, tokenizer_file
 
 # training settings
 block_size = 128
