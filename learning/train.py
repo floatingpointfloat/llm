@@ -18,7 +18,13 @@ epochs = 10
 learning_rate = 3e-4
 
 # set to True to continue training from the latest checkpoint
-resume_training = False
+resume_training = True
+
+# master switch
+ALLOW_TRAINING = False
+
+if not ALLOW_TRAINING:
+    raise RuntimeError("Training isn't allowed currently!")
 
 # checkpoint settings
 checkpoint_dir = Path("checkpoints")
