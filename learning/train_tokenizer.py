@@ -7,11 +7,13 @@ from pathlib import Path
 from tokenizer import BPETokenizer
 from config import training_file, tokenizer_file
 
-# path to the training corpus
-training_file = Path("data\physics_training_corpus.txt")
+print("Training file:", repr(training_file))
+print("String path:", repr(str(training_file)))
+print("File exists:", Path(training_file).exists())
+print("Absolute path:", Path(training_file).resolve())
 
 # initialize the tokenizer
-tokenizer = BPETokenizer(vocab_size=20000)
+tokenizer = BPETokenizer(vocab_size=8000)
 
 # train the tokenizer
 tokenizer.train([str(training_file)])
