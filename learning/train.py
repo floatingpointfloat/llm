@@ -130,10 +130,15 @@ for epoch in range(start_epoch, start_epoch + epochs):
         total_loss += loss.item()
         num_batches += 1
 
+        if num_batches % 50 == 0:
+            print(
+                f"-----Epoch: {epoch + 1} | Batch: {num_batches} | Loss: {total_loss / num_batches}"
+            )
+
     # calculate average loss for this epoch
     average_loss = total_loss / num_batches
 
-    print(f"Epoch {epoch + 1} | " f"Loss: {average_loss:.4f}")
+    print(f"EPOCH {epoch + 1} | " f"LOSS: {average_loss:.4f}")
 
     # save model and optimizer state
     torch.save(
