@@ -4,16 +4,29 @@ from pathlib import Path
 input_file = Path("train.jsonl")
 output_file = Path("qa_training.txt")
 
+max_examples = 5000
+
 with input_file.open("r", encoding="utf-8") as file:
-    lines = file.readlines()
+    with output_file.open("w", encoding="utf-8") as output:
+        for index, line in enumerate(file):
+            if index >= max_examples:
+                break
 
-with output_file.open("w", encoding="utf-8") as file:
-    for line in lines:
-        if not line.strip():
-            continue
+            if not line.strip():
+                continue
 
-        example = json.loads(line)
+            example = json.loads(line)
 
-        # inspect the dataset structure before adapting this part
-        print(example)
-        break
+            for turn in example["turns"]:
+                role = turn["role"]
+                content = turn["content"]
+
+                if role == "user":
+                    output.write(f"User: {content}\n")
+                elif role == "model":
+                    output.write(f"Assistant: {content}\n")
+
+            # separate conversations
+            output.write("\n<|endoftext|>\n\n")
+
+print(f"Conversion completed: {output_file}")
