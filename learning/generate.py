@@ -1,31 +1,24 @@
 """
-Generate text with the trained GPT model.
+Generate text with the GPT model
 """
 
-from pathlib import Path
-
-import torch
-
+from config import training_file, tokenizer_file, checkpoint_file
 from model import GPT, GPTConfig
 from tokenizer import BPETokenizer
 
-# settings
+from pathlib import Path
+import torch
+
+# settings for the generation
 max_new_tokens = 50
 temperature = 0.8
-
-# paths
-tokenizer_file = Path("tokenizer.json")
-checkpoint_file = Path("checkpoints/latest.pt")
-
 
 # select device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", device)
 
-
-# load tokenizer
+# load the tokenizer
 tokenizer = BPETokenizer.load(tokenizer_file)
-
 
 # load checkpoint
 checkpoint = torch.load(
@@ -34,22 +27,21 @@ checkpoint = torch.load(
     weights_only=True,
 )
 
-# restore model configuration
+# restore the config
 config = GPTConfig(**checkpoint["config"])
 
-# initialize model and load trained parameters
+# load the model
 model = GPT(config).to(device)
-model.load_state_dict(checkpoint["model_state_dict"])
+model.load_state_dict(checkpoint["model_state_dict"])  # load the parameters
 
-# switch to evaluation mode
+# swith to eval mode
 model.eval()
 
 
 def generate_text(prompt: str, max_new_tokens: int = 100) -> str:
-    # encode prompt
     input_ids = tokenizer.encode(prompt)
 
-    if not input_ids:
+    if not input_ids:  # prevent the user from entering without having entered something
         raise ValueError("The prompt must contain at least one token.")
 
     # convert to tensor
@@ -62,16 +54,16 @@ def generate_text(prompt: str, max_new_tokens: int = 100) -> str:
     # generate new tokens
     with torch.no_grad():
         for _ in range(max_new_tokens):
-            # keep the input within the model's context window
+            # keep the input within the models context 'window' size
             idx_cond = idx[:, -config.block_size :]
 
-            # predict next token
+            # get the prediction
             logits = model(idx_cond)
 
             # get logits for the last position
             logits = logits[:, -1, :]
 
-            # apply temperature
+            # apply the temperature
             logits = logits / temperature
 
             # convert logits to probabilities
@@ -83,20 +75,21 @@ def generate_text(prompt: str, max_new_tokens: int = 100) -> str:
             # append token
             idx = torch.cat((idx, next_token), dim=1)
 
-    # decode generated sequence
-    return tokenizer.decode(idx[0].tolist())
+        # decode generated sequence
+        return tokenizer.decode(idx[0].tolist())
 
 
 def main():
-    prompt = input("Enter a prompt: ")
+    while True:
+        prompt = input("Enter a prompt: ")
+        generated_text = generate_text(prompt)
 
-    generated_text = generate_text(
-        prompt,
-        max_new_tokens=max_new_tokens,
-    )
+        print("\nGenerated text:\n")
+        print(generated_text)
 
-    print("\nGenerated text:\n")
-    print(generated_text)
+        again = input("\nGenerate new text? (Y/n): ")
+        if again == "n":
+            break
 
 
 if __name__ == "__main__":
