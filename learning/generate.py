@@ -8,7 +8,7 @@ from tokenizer import BPETokenizer
 
 from pathlib import Path
 import torch
-from time import time
+import time
 
 # settings for the generation
 max_new_tokens = 2000
@@ -46,7 +46,7 @@ def generate_text(prompt: str, max_new_tokens: int = 100, generated_tokens=0):
     start_time = time.time()  # get the time for the token per second counter
 
     # version live printing
-    print(prompt)
+    print(prompt, end="")
 
     input_ids = tokenizer.encode(prompt)
 
@@ -87,7 +87,7 @@ def generate_text(prompt: str, max_new_tokens: int = 100, generated_tokens=0):
                 break
 
             # version live printing
-            print(tokenizer.decode(next_token[0].tolist()))
+            print(tokenizer.decode(next_token[0].tolist()), end="")
 
             # append token
             idx = torch.cat((idx, next_token), dim=1)
