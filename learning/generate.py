@@ -8,6 +8,7 @@ from tokenizer import BPETokenizer
 
 from pathlib import Path
 import torch
+from time import time
 
 # settings for the generation
 max_new_tokens = 2000
@@ -41,7 +42,12 @@ model.eval()
 end_of_text_id = tokenizer.tokenizer.token_to_id("<|endoftext|>")
 
 
-def generate_text(prompt: str, max_new_tokens: int = 100) -> str:
+def generate_text(prompt: str, max_new_tokens: int = 100, generated_tokens=0):
+    start_time = time.time()  # get the time for the token per second counter
+
+    # version live printing
+    print(prompt)
+
     input_ids = tokenizer.encode(prompt)
 
     if not input_ids:  # prevent the user from entering without having entered something
@@ -74,25 +80,41 @@ def generate_text(prompt: str, max_new_tokens: int = 100) -> str:
 
             # sample next token
             next_token = torch.multinomial(probabilities, num_samples=1)
+            generated_tokens += 1
 
             # stop after the end of text token
             if next_token.item() == end_of_text_id:
                 break
 
+            # version live printing
+            print(tokenizer.decode(next_token[0].tolist()))
+
             # append token
             idx = torch.cat((idx, next_token), dim=1)
 
+        # tokens per second
+        computation_time = time.time() - start_time
+        tokens_per_second = round(generated_tokens / computation_time, 1)
+        print(f"\nTokens per second: {tokens_per_second}\n")
+
         # decode generated sequence
-        return tokenizer.decode(idx[0].tolist())
+        return tokenizer.decode(idx[0].tolist()), tokens_per_second
 
 
 def main():
     while True:
         prompt = input("Enter a prompt: ")
-        generated_text = generate_text(prompt, max_new_tokens)
 
+        # version printing afterwards
+        # generated_text, tokens_per_second = generate_text(prompt, max_new_tokens)
+        # print("\nGenerated text:\n")
+        # print(generated_text)
+
+        # version live printing
         print("\nGenerated text:\n")
-        print(generated_text)
+        generated_text, tokens_per_second = generate_text(
+            prompt, max_new_tokens=max_new_tokens
+        )
 
         again = input("\nGenerate new text? (Y/n): ")
         if again == "n":
