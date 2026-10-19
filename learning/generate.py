@@ -95,10 +95,12 @@ def generate_text(prompt: str, max_new_tokens: int = 100, generated_tokens=0):
         # tokens per second
         computation_time = time.time() - start_time
         tokens_per_second = round(generated_tokens / computation_time, 1)
-        print(f"\nTokens per second: {tokens_per_second}\n")
+        print(
+            f"\nTokens per second: {tokens_per_second}\nGenerated tokens: {generated_tokens}\nComputation time: {round(computation_time, 1)}s\n"
+        )
 
         # decode generated sequence
-        return tokenizer.decode(idx[0].tolist()), tokens_per_second
+        return tokenizer.decode(idx[0].tolist()), tokens_per_second, generated_tokens
 
 
 def main():
@@ -106,13 +108,13 @@ def main():
         prompt = input("Enter a prompt: ")
 
         # version printing afterwards
-        # generated_text, tokens_per_second = generate_text(prompt, max_new_tokens)
+        # generated_text, tokens_per_second, generated_tokens = generate_text(prompt, max_new_tokens)
         # print("\nGenerated text:\n")
         # print(generated_text)
 
         # version live printing
         print("\nGenerated text:\n")
-        generated_text, tokens_per_second = generate_text(
+        generated_text, tokens_per_second, generated_tokens = generate_text(
             prompt, max_new_tokens=max_new_tokens
         )
 
