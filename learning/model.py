@@ -224,29 +224,29 @@ class GPT(nn.Module):
         return x
 
 
-"""
-Debug :))
-"""
+if __name__ == "__main__":
+    """
+    Debug :))
+    """
 
-config = GPTConfig(vocab_size=100)
-model = GPT(config)
+    config = GPTConfig(vocab_size=100)
+    model = GPT(config)
 
-idx = torch.randint(0, config.vocab_size, (2, 10))
-logits = model(idx)
+    idx = torch.randint(0, config.vocab_size, (2, 10))
+    logits = model(idx)
 
-print(logits.shape)
+    print(logits.shape)
 
+    model.train()
 
-model.train()
+    logits_1 = model(idx)
+    logits_2 = model(idx)
 
-logits_1 = model(idx)
-logits_2 = model(idx)
+    print("Training mode:", not torch.equal(logits_1, logits_2))
 
-print("Training mode:", not torch.equal(logits_1, logits_2))
+    model.eval()
 
-model.eval()
+    logits_3 = model(idx)
+    logits_4 = model(idx)
 
-logits_3 = model(idx)
-logits_4 = model(idx)
-
-print("Evaluation mode:", torch.equal(logits_3, logits_4))
+    print("Evaluation mode:", torch.equal(logits_3, logits_4))
