@@ -7,13 +7,16 @@ from pathlib import Path
 from tokenizer import BPETokenizer
 from config import training_file, tokenizer_file
 
+training_file = r"/mnt/c/users/gigabyte/documents/github/llm/long_stories/data/training_text.txt"
+tokenizer_file = r"/mnt/c/users/gigabyte/documents/github/llm/long_stories/tokenizer.json"
+
 print("Training file:", repr(training_file))
 print("String path:", repr(str(training_file)))
 print("File exists:", Path(training_file).exists())
 print("Absolute path:", Path(training_file).resolve())
 
 # initialize the tokenizer
-tokenizer = BPETokenizer(vocab_size=50000)
+tokenizer = BPETokenizer(vocab_size=32000)
 
 # train the tokenizer
 tokenizer.train([str(training_file)])
