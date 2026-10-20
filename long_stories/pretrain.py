@@ -14,11 +14,11 @@ from prepare_data_txt import prepare_data, block_size
 
 # training settings
 batch_size = 32
-epochs = 10
+epochs = 20
 learning_rate = 3e-4
 
 # set to True to continue training from the latest checkpoint
-resume_training = True
+resume_training = False
 
 # master switch
 ALLOW_TRAINING = True
