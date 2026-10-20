@@ -15,7 +15,7 @@ import torch.nn.functional as F
 @dataclass
 class GPTConfig:
     vocab_size: int
-    block_size: int = 128  # sequence length
+    block_size: int = 512  # sequence length
     n_embd: int = 512  # size of the vector per token
     n_heads: int = 4  # amount of heads for the multihead attention
     n_layers: int = 8
@@ -39,14 +39,7 @@ class CausalSelfAttention(nn.Module):
         dimension per head: example 256 dimensions 4 head -> head_dim 64 dimensions per head
         integer division cause we sadly do not want floats here 
         """
-        self.register_buffer(
-            "mask", torch.tril(torch.ones(config.block_size, config.block_size))
-        )  # create the causal mask in this form (more or less):
-        # tensor([[1., 0., 0., 0.],
-        # [1., 1., 0., 0.],
-        # [1., 1., 1., 0.],
-        # [1., 1., 1., 1.]])
-        # prevent the model from looking at future tokens
+        
 
         self.key = nn.Linear(
             config.n_embd, config.n_embd
@@ -61,7 +54,6 @@ class CausalSelfAttention(nn.Module):
         # projection layer to combine the different vectors q, k, v
         self.proj = nn.Linear(config.n_embd, config.n_embd)
 
-        self.attn_dropout = nn.Dropout(config.dropout)  # dropout layers
         self.resid_dropout = nn.Dropout(config.dropout)
 
     def forward(
@@ -88,28 +80,14 @@ class CausalSelfAttention(nn.Module):
         q = q.transpose(1, 2)
         k = k.transpose(1, 2)
         v = v.transpose(1, 2)
-        # and now the key vector from (batch_size, n_heads, sequence_length, head_dim) to (batch_size, n_heads, head_dim, sequence_length)
-        k = k.transpose(2, 3)
-
-        # attention scores or part of them (page 4):
-        scores = torch.matmul(q, k) / math.sqrt(self.head_dim)
-
-        # apply causal masking to prevent the model from looking at future tokens
-        sequence_length = q.shape[2]  # get the current sequence length from q
-
-        # select the part of the mask that matches the current sequence length
-        mask = self.mask[:sequence_length, :sequence_length]
-
-        # replace scores at forbidden positions with negative infinity
-        # this ensures that these positions receive zero attention after softmax
-        scores = scores.masked_fill(mask == 0, -torch.inf)
-
-        # convert the attention scores into attention weights
-        weights = F.softmax(scores, dim=-1)
-        weights = self.attn_dropout(weights)
-
-        # combine the value vectors using the attention weights
-        out = torch.matmul(weights, v)
+        
+        out = F.scaled_dot_product_attention(
+            q, k, v,
+            attn_mask=None,
+            dropout_p=self.config.dropout if self.training else 0.0,
+            is_causal=True
+        ) # pytorch attention funktion :)
+        
         # move the sequence length dimension before the heads
         # (batch_size, n_heads, sequence_length, head_dim) to (batch_size, sequence_length, n_heads, head_dim)
         out = out.transpose(1, 2)
