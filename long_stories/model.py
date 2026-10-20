@@ -15,7 +15,7 @@ import torch.nn.functional as F
 @dataclass
 class GPTConfig:
     vocab_size: int
-    block_size: int = 512  # sequence length
+    block_size: int = 256  # sequence length
     n_embd: int = 512  # size of the vector per token
     n_heads: int = 4  # amount of heads for the multihead attention
     n_layers: int = 8

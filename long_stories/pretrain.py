@@ -10,7 +10,7 @@ from torch.optim import AdamW
 from torch.utils.data import DataLoader
 
 from model import GPT, GPTConfig
-from prepare_data import prepare_data, block_size
+from prepare_data_txt import prepare_data, block_size
 
 # training settings
 batch_size = 32
