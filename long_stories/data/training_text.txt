@@ -18,7 +18,7 @@ Welcher Mann dem andern leihet seyn Pferd / Kleid / oder was es für Gut sey / u
 die thatsächlich stattfindende Strömungsfunktion. Es handelt sich darum, die von dieser inducirte Strömung zu finden. Hierzu ist zunächst die Kenntniss des von in der magnetischen Masse inducirten Potentiales erforderlich.
 Die von der Strömungsfunktion
 in Richtung des Radius ausgeübte magnetische Kraft ist
-wenn und den auf Seite 38 angegebenen Zusammenhang haben.
+wenn und den auf Seite 38 angegebenen Zusammenhang haben.d
 Hieraus und aus den Bedingungsgleichungen für (Gleichung 6) 7) Seite 65) ergiebt sich im allgemeinen und in unserm speciellen Falle, und wir erhalten für letzteren:
 Verstehen wir nun unter diejenige Strömungsfunktion welche und zusammen in der unmagnetischen Kugel erzeugen würden, so veranlassen sie in der magnetischen Masse die Funktion
 und die Bedingung des stationären Zustandes wird werden:
