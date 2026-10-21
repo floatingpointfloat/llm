@@ -3,7 +3,7 @@ input_file = "v4_GERMAN.txt"
 output_file = "training_text.txt"
 
 # Change this number to however many lines you want to train with
-max_lines = 100000
+max_lines = 300000
 starting_from_line = 0
 
 with open(input_file, "r", encoding="utf-8") as infile:
@@ -13,6 +13,9 @@ with open(input_file, "r", encoding="utf-8") as infile:
                 break
             if (
                 i >= starting_from_line
+                and line.strip()
+                and "German:" not in line
+                and "-----" not in line
             ):  # only write the lines after the starting from line variable (to make a variable training text)
                 outfile.write(line)
 
