@@ -12,7 +12,7 @@ import time
 
 # settings for the generation
 max_new_tokens = 1000
-temperature = 0.9
+temperature = 0.8
 
 # select device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
