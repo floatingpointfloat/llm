@@ -1,8 +1,8 @@
 # Create a tiny custom dataset of your preferred size
-input_file = "training_text_base.txt"
+input_file = "v4_GERMAN.txt"
 output_file = "training_text.txt"
 
-# Change this number to however many lines you want to test with
+# Change this number to however many lines you want to train with
 max_lines = 100000
 starting_from_line = 0
 
