@@ -18,7 +18,7 @@ epochs = 20
 learning_rate = 3e-4
 
 # set to True to continue training from the latest checkpoint
-resume_training = False
+resume_training = True
 
 # master switch
 ALLOW_TRAINING = True
