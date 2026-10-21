@@ -9,3 +9,6 @@ __pycache__/
 #checkpoints
 learning/checkpoints/
 long_stories/checkpoints
+
+#data
+long_stories/data/v4_GERMAN.txt
