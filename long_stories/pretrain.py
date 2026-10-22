@@ -13,9 +13,9 @@ from model import GPT, GPTConfig
 from prepare_data_txt import prepare_data, block_size
 
 # training settings
-batch_size = 32
-epochs = 20
-learning_rate = 3e-4
+batch_size = 64
+epochs = 10
+learning_rate = 0.0008
 
 # set to True to continue training from the latest checkpoint
 resume_training = True
@@ -29,6 +29,7 @@ if not ALLOW_TRAINING:
 # checkpoint settings
 checkpoint_dir = Path("checkpoints")
 checkpoint_file = checkpoint_dir / "latest.pt"
+checkpoint_interval = 1000
 
 
 # select the device (CUDA if available)
@@ -65,6 +66,7 @@ optimizer = AdamW(
 
 # resume training if requested
 start_epoch = 0
+start_batch = 0
 
 if resume_training:
     if not checkpoint_file.exists():
@@ -80,15 +82,23 @@ if resume_training:
     model.load_state_dict(checkpoint["model_state_dict"])
     optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
 
-    # continue with the next epoch
-    start_epoch = checkpoint["epoch"]
+    if "epoch_complete" in checkpoint:
+        if checkpoint["epoch_complete"]:
+            start_epoch = checkpoint["epoch"]
+        else:
+            start_epoch = checkpoint["epoch"] - 1
+            start_batch = checkpoint.get("batch", 0)
+    else:
+        start_epoch = checkpoint["epoch"]
 
-    print("Resuming from epoch:", start_epoch)
+    print("Resuming from epoch:", start_epoch + 1)
+    print("Resuming from batch:", start_batch)
 
 
 # print model information
 print("Vocabulary size:", config.vocab_size)
 print("Dataset size:", len(dataset))
+print("Batches per epoch:", len(dataloader))
 print("Model parameters:", sum(p.numel() for p in model.parameters()))
 
 
@@ -103,7 +113,10 @@ for epoch in range(start_epoch, start_epoch + epochs):
     total_loss = 0.0
     num_batches = 0
 
-    for x, y in dataloader:
+    for batch_idx, (x, y) in enumerate(dataloader):
+        if epoch == start_epoch and batch_idx < start_batch:
+            continue
+
         # move data to the selected device
         x = x.to(device)
         y = y.to(device)
@@ -132,10 +145,29 @@ for epoch in range(start_epoch, start_epoch + epochs):
 
         if num_batches % 25 == 0:
             print(
-                f"-----Epoch: {epoch + 1} | Batch: {num_batches} | Loss: {total_loss / num_batches}"
+                f"----------Epoch: {epoch + 1} | Batch: {batch_idx + 1} | Loss: {total_loss / num_batches}----------"
             )
 
+        if (batch_idx + 1) % checkpoint_interval == 0:
+            torch.save(
+                {
+                    "model_state_dict": model.state_dict(),
+                    "optimizer_state_dict": optimizer.state_dict(),
+                    "epoch": epoch + 1,
+                    "batch": batch_idx + 1,
+                    "epoch_complete": False,
+                    "config": config.__dict__,
+                },
+                checkpoint_file,
+            )
+
+            print("Checkpoint saved:", checkpoint_file)
+
     # calculate average loss for this epoch
+    if num_batches == 0:
+        print(f"Epoch {epoch + 1} already completed.")
+        continue
+
     average_loss = total_loss / num_batches
 
     print(f"EPOCH {epoch + 1} | " f"LOSS: {average_loss:.4f}")
@@ -146,11 +178,15 @@ for epoch in range(start_epoch, start_epoch + epochs):
             "model_state_dict": model.state_dict(),
             "optimizer_state_dict": optimizer.state_dict(),
             "epoch": epoch + 1,
+            "batch": 0,
+            "epoch_complete": True,
             "config": config.__dict__,
         },
         checkpoint_file,
     )
 
     print("Checkpoint saved:", checkpoint_file)
+
+    start_batch = 0
 
 print("Training finished!")
