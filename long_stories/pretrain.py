@@ -82,6 +82,9 @@ if resume_training:
     model.load_state_dict(checkpoint["model_state_dict"])
     optimizer.load_state_dict(checkpoint["optimizer_state_dict"])
 
+    for param_group in optimizer.param_groups:
+        param_group["lr"] = learning_rate
+
     if "epoch_complete" in checkpoint:
         if checkpoint["epoch_complete"]:
             start_epoch = checkpoint["epoch"]
