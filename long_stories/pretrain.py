@@ -15,7 +15,7 @@ from prepare_data_txt import prepare_data, block_size
 # training settings
 batch_size = 64
 epochs = 10
-learning_rate = 0.0008
+learning_rate = 0.0005
 
 # set to True to continue training from the latest checkpoint
 resume_training = True
