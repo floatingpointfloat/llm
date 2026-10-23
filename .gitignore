@@ -11,5 +11,5 @@ learning/checkpoints/
 long_stories/checkpoints
 
 #data
-long_stories/data/v4_GERMAN.txt
-long_stories/data/evol-instruct-deutsch.json
+german_stories/data/evol-instruct-deutsch.json
+german_stories/checkpoints/
