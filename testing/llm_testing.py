@@ -26,12 +26,11 @@ def generate(prompt, max_new_tokens=50):
     return tokenizer.decode(output[0], skip_special_tokens=True)
 
 
-# 4. Test-Fragen
-test_questions = [
-    "Wer ist ein bekannter deutscher Autor?",
-    "Was bedeutet KI?",
-]
+def main():
+    prompt = input("Prompt: \n")
+    print(generate(prompt, max_new_tokens=100))
 
-for q in test_questions:
-    print(f"\n📝 Frage: {q}")
-    print(f"🤖 Antwort: {generate(q, max_new_tokens=30)}")
+
+if __name__ == "__main__":
+    while True:
+        main()
